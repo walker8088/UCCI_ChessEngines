@@ -1,0 +1,1 @@
+CL /O2 /W3 /FeMARS.EXE *.CPP

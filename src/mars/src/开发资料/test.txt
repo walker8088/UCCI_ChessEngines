@@ -1,0 +1,25 @@
+
+    //board_from_fen(SearchInput->board,"4k4/3PcP3/3P1R3/4R4/3P1P3/2N3N2/1C5C1/3A1A3/9/2B1K1B2 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/4c4/9/9/9/4R1n2/4K4 r - - 0 1");
+	//?board_from_fen(SearchInput->board,"3k5/9/9/4c4/4P4/9/9/9/5Rn2/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/4c4/4r4/9/9/9/9/cr2K4 r - - 0 1");
+    //board_from_fen(SearchInput->board,"4k4/9/4c4/9/9/4r4/9/9/9/4KN2c w - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/9/9/9/3n5/9/cp1RK4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/9/9/9/9/4r4/4K4 r - - 0 1");
+    //board_from_fen(SearchInput->board,"3k5/9/9/4c4/9/9/9/9/4K1r2/9 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/9/5r3/9/9/9/5K1c1 r - - 0 1");
+	board_from_fen(SearchInput->board,"3akab2/r5c2/2n5r/p1CR4p/1Rb1pnp2/2N6/P1P3P1P/2N1c4/9/2BAKAB2 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3akab2/r5c2/b1nN4r/p1CR4p/1R3np2/4p4/P1P3P1P/2N1B4/9/3AKAB2 b - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/9/4c4/6R2/2N2n3/5R3/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/4c4/4p4/4C4/9/9/9/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"4k4/9/9/9/4C4/9/9/9/9/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/9/4c4/2N6/9/9/5Rn2/cR1nK1C2r r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/3r2n2/9/7N1/6R2/9/6c2/9/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k5/9/9/3rn4/9/5N3/4R4/4c4/9/4K4 w - - 0 1");
+	//board_from_fen(SearchInput->board,"3k1a3/4aP3/5rn2/9/6RN1/6c2/cCNn5/3p5/4A4/4K4 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k1a3/4aP3/5rn2/9/6RN1/6c2/3N5/3pCK3/3nA4/5c3 r - - 0 1");
+	//board_from_fen(SearchInput->board,"3k1a3/4aP3/9/9/6RN1/6c2/3N5/3pCK3/3nA4/5c3 r - - 0 1");
+
+3k5/9/9/9/4c4/4r4/2N6/9/9/4K4 r
+3k5/9/9/9/4c4/4r4/6N2/9/6n2/4K4 r
+3k5/9/9/4c4/9/4r4/9/6n2/4K4/9 r

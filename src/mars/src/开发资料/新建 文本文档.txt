@@ -1,0 +1,72 @@
+/*
+	  FILE *OutFile=fopen("AA.txt","w");
+     
+	  
+	  uint32 s1,s2;
+
+	  for(int i=0;i<781;++i)
+	  {
+		  s1=Random64[i]>>32;
+		  s2=Random64[i] & 0xffffffff;
+
+		  fprintf(OutFile,"U64(0x%x%x),",s1,s2);
+		  if( (((i+1)%9)==0))
+		  fprintf(OutFile,"\n");
+
+	  }
+	  fclose(OutFile);
+*/
+   // pst_init();
+    //  eval_init();
+
+	//board_clear();
+    nCheck=0;
+    //board_from_fen("rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1");     
+	//board_from_fen("3akab2/r5c2/2n5r/p1CR4p/1Rb1pnp2/2N6/P1P3P1P/2N1c4/9/2BAKAB2 r - - 0 1");
+	//board_from_fen("3akab2/r5c2/2n5r/p1CR4p/1Rb1pnp2/2N6/P1P1P1P1P/2N1c4/9/2BAKAB2 r - - 0 1");
+    //board_from_fen("3akab2/3c5/b1n3r2/p1C5p/9/9/P1P1p1P1P/4B4/9/3AKAB2 r - - 0 1");
+	//board_from_fen("3akab2/6c2/b1nr5/p1C5p/5Rp2/4p4/P1P3P1P/2N1B4/9/3AKAB2 r - - 0 1");
+	//board_from_fen("3k5/4c4/9/4P4/5P3/3N2R2/9/9/9/4KAB2 r - - 0 1");
+	//board_from_fen("3akab2/r3c4/2n1bcn1r/p1C4Rp/4p1p2/2N6/P1P3P1P/2N1C4/9/R1BAKAB2 b - - 0 1");
+	//board_from_fen("1rbaka3/4n4/4b2c1/p3Nn2p/9/2p4R1/P3P3P/3RC4/1cC6/1NBAKAr2 r - - 0 1");
+	//board_from_fen("rnbakabnr/9/7c1/p1p1p1p1p/4c4/9/P1P1P1P1P/1C5C1/9/RNBAKABNR r - - 0 1");
+	board_from_fen("1rbakar2/4n4/4b2c1/p3Nn2p/9/2p4R1/P3P3P/3RC4/1cC6/1NBAKAB2 b - - 0 1");
+	print_board();
+    long time1,time2;
+	time1=clock();
+  
+	search();
+	printf("\n最好着法 ");
+	print_move(SearchBest->move);
+	printf("\ncheck=%d\n",nCheck);
+    
+	mv_t * move;
+	move=SearchBest->pv;
+	while (*move!= MoveNone)
+	{
+       print_move(*move);
+	   move++;
+	}
+	
+
+	//
+//     gen_legal_moves(g_list,SearchInput->board);   
+	//test_gen_good_capture(g_list,SearchInput->board);
+    //gen_legal_moves(g_list,SearchInput->board);
+	//move_do(SearchInput->0xa434,g_undo);
+	//printf("colour=%d",SearchInput->Turn);
+	//print_board(SearchInput->board);
+	//move_undo(SearchInput->0xa434,g_undo);
+	//printf("colour=%d",SearchInput->Turn);
+	//print_board(SearchInput->board);
+	time2=clock()-time1;
+	printf("time=%d\n",time2);
+   
+	//print_board(SearchCurrent->board);
+
+	//printf("node=%d\n",SearchCurrent->node_nb);
+	
+    print_list(g_list);
+	
+	print_board();
+	//attack_init();
