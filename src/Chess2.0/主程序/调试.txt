@@ -1,0 +1,63 @@
+		#define NOCHESS    0 //没有棋子
+
+		#define B_KING	   1 //黑帅
+		#define B_CAR	   2 //黑车
+		#define B_HORSE	   3 //黑马
+		#define B_CANON	   4 //黑炮
+		#define B_BISHOP   5 //黑士
+		#define B_ELEPHANT 6 //黑象
+		#define B_PAWN     7 //黑兵
+		#define B_BEGIN    B_KING
+		#define B_END      B_PAWN
+
+		#define R_KING	   8 //红将
+		#define R_CAR      9 //红车
+		#define R_HORSE    10//红马
+		#define R_CANON    11//红炮
+		#define R_BISHOP   12//红士
+		#define R_ELEPHANT 13//红相
+		#define R_PAWN     14//红卒
+
+
+        m_iLineupB5ConnectPawn=200;
+	m_iLineupB4ConnectPawn=150;
+	m_iLineupB3ConnectPawn=100;
+	m_iLineupB2ConnectPawn=50;
+
+	m_iLineupBConnectElephant=50;    //连环象
+	m_iLineupBScndConnectElephant=25;//亚连环象
+	m_iLineupBConnectBishop=25;      //连环士
+	m_iLineupBConnectHorse=50;       //连环马
+	m_iLineupBScndConnectHorse=30;   //亚连环马
+	m_iLineupBSznConnectHorse=20;    //季连环马
+
+	m_iLineupBCannonKing=100;     //将的同行或同列有一个炮，且它们之间无子
+	m_iLineupBHorseCannon=2000;   //马后炮将军，且马和将的距离为2
+	m_iLineupBScndHorseCannon=500;//马后炮将军，且马和将的距离不为2
+	m_iLineupBCannonCar=500;      //炮车将军
+	m_iLineupBCarCannon=200;      //车炮将军
+	m_iLineupBDblCannon=500;      //双炮将军
+	m_iLineupBCannon2Horese=500;  //炮和将之间有两子，其中有一个是对方的马
+	m_iLineupBCannon2Else=400;    //炮和将之间有两子，其中没有对方的马
+
+
+	//红
+	//连兵
+	m_iLineupR5ConnectPawn=200;
+	m_iLineupR4ConnectPawn=150;
+	m_iLineupR3ConnectPawn=100;
+	m_iLineupR2ConnectPawn=50;
+
+	m_iLineupRConnectElephant=50;    //连环象
+	m_iLineupRScndConnectElephant=25;//亚连环象
+	m_iLineupRConnectBishop=25;      //连环士
+	m_iLineupRConnectHorse=50;       //连环马
+	m_iLineupRScndConnectHorse=30;   //亚连环马
+	m_iLineupRSznConnectHorse=20;    //季连环马
+
+	m_iLineupRCannonKing=100;     //将的同行或同列有一个炮，且它们之间无子
+	m_iLineupRHorseCannon=2000;   //马后炮将军，且马和将的距离为2
+	m_iLineupRScndHorseCannon=500;//马后炮将军，且马和将的距离不为2
+	m_iLineupRCannonCar=500;      //炮车将军
+	m_iLineupRCarCannon=200;      //车炮将军
+	m_iLineupRDblCannon=500;

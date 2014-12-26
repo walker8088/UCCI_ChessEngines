@@ -1,0 +1,120 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Chess.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_CHESS_DIALOG                102
+#define IDB_LIGHTBULB                   105
+#define IDD_TIP                         106
+#define CG_IDS_TIPOFTHEDAY              107
+#define CG_IDS_TIPOFTHEDAYMENU          108
+#define CG_IDS_DIDYOUKNOW               109
+#define CG_IDS_FILE_ABSENT              110
+#define CG_IDP_FILE_CORRUPT             111
+#define CG_IDS_TIPOFTHEDAYHELP          112
+#define IDR_MAINFRAME                   128
+#define IDD_SET                         129
+#define IDB_CHESSMAN                    130
+#define IDB_CHESSBOARD                  131
+#define IDR_MENU_SETCHESSBOARDING       135
+#define IDR_MENU_MAIN                   138
+#define IDR_MENU_CHESSING               140
+#define IDI_UNDO                        146
+#define IDI_REDO                        147
+#define IDI_STOP                        149
+#define IDI_COMPUTER                    150
+#define IDI_SET                         151
+#define IDI_HELP                        152
+#define IDB_OK                          154
+#define IDB_CANCEL                      155
+#define IDD_HELP                        155
+#define IDB_BOXTO                       156
+#define IDB_BOXFROM                     157
+#define IDD_SPLASH                      163
+#define IDB_SPLASH                      164
+#define IDC_STATIC_MAIL                 1000
+#define IDC_BULB                        1000
+#define IDC_EDIT_TIMELIMIT              1001
+#define IDC_STARTUP                     1001
+#define IDC_STATIC_QQ                   1002
+#define IDC_NEXTTIP                     1002
+#define IDC_STATIC_TIP                  1003
+#define IDC_PREVIEWTIP                  1003
+#define IDC_BTNCOMPUTER                 1004
+#define IDC_TIPSTRING                   1004
+#define IDC_BTN_STOP                    1005
+#define IDC_PROGRESSTHINK               1006
+#define IDC_BTNUNDO                     1007
+#define IDC_BTNREDO                     1008
+#define IDC_RADIOPC                     1009
+#define IDC_RADIOPP                     1010
+#define IDC_EDIT_HELP                   1011
+#define IDC_RADIOHASH                   1012
+#define IDC_CHECK_SOUND                 1015
+#define IDC_STATIC_MYWEB                1016
+#define IDC_PROGRESS                    1016
+#define IDC_EDIT_DEPTH                  1017
+#define IDM_NEWGAME                     32771
+#define IDM_SETCHESSBOARD               32772
+#define IDM_OPENFILE                    32773
+#define IDM_SAVEFILE                    32774
+#define IDM_ABOUT                       32775
+#define IDM_HELP                        32776
+#define IDM_SET                         32777
+#define IDM_DELETE                      32778
+#define ID_BAI_CANCEL                   32779
+#define ID_RED_B                        32780
+#define ID_RED_P                        32781
+#define ID_RED_J                        32782
+#define ID_RED_K                        32783
+#define ID_RED_M                        32784
+#define ID_RED_X                        32785
+#define ID_RED_S                        32786
+#define ID_BLACK_B                      32787
+#define ID_BLACK_P                      32788
+#define ID_BLACK_J                      32789
+#define ID_BLACK_M                      32790
+#define ID_BLACK_X                      32791
+#define ID_BLACK_S                      32792
+#define ID_BLACK_K                      32793
+#define IDM_CLEARCB                     32794
+#define IDM_EXIT                        32795
+#define IDM_INVERSECB                   32796
+#define IDM_RPAWN                       32797
+#define IDM_RCANON                      32798
+#define IDM_RCAR                        32799
+#define IDM_SAVE                        32800
+#define IDM_OPEN                        32801
+#define IDM_MAKEMANUAL                  32802
+#define IDC_LISTCHESSRECORD             32810
+#define IDC_PLY                         32820
+#define IDC_PLY2                        32821
+#define IDC_RADIOREDCHESS               32830
+#define IDC_RADIOBLACKCHESS             32840
+#define IDC_RADIOCC                     32850
+#define IDM_RHORSE                      32860
+#define IDM_RELEPHANT                   32870
+#define IDM_RBISHOP                     32880
+#define IDM_RKING                       32890
+#define IDM_BPAWN                       32900
+#define IDM_BCANON                      32910
+#define IDM_BCAR                        32920
+#define IDM_BHORSE                      32930
+#define IDM_BELEPHANT                   32940
+#define IDM_BBISHOP                     32950
+#define IDM_BKING                       32960
+#define IDM_SCBOVER                     32970
+#define IDM_PREVIEW                     32980
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        173
+#define _APS_NEXT_COMMAND_VALUE         32803
+#define _APS_NEXT_CONTROL_VALUE         1019
+#define _APS_NEXT_SYMED_VALUE           113
+#endif
+#endif

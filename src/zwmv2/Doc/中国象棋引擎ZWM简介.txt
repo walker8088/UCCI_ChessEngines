@@ -1,0 +1,19 @@
+中国象棋引擎"ZWM"(版本:0.2) 简介
+
+一、主要技术
+  1. 数据结构:位行、位列(BitRank、BitFile),棋盘-棋子联系数组
+  2. 搜索算法:主要变例搜索(PVS:Principal Variation Search),平静搜索(Quiescent Search),迭代加深搜索(Iterative Deepening Search)
+  3. 裁剪:R=2的空着裁剪(Null Move Pruning),阈值为1/4的历史裁剪(History Pruning),置换裁剪,和棋裁剪,杀棋裁剪
+  4. 延伸:将军延伸(Check Extension),杀棋威胁延伸(Mate-Threat Extension),兑子延伸(Recapture Extension)
+  5. 启发:置换启发,内部迭代加深启发,吃子启发,历史启发(History Heuristic)
+  6. 平静扩展:吃子扩展,将军扩展
+  7. 局面评估:采用"梦入圣蛋"的快速局面评估方法
+  8. 开局库:共用ElephantEye的开局库
+  9. 置换表替换策略:始终覆盖
+
+二、界面引擎协议支持
+  支持UCCI协议大多数命令,支持浅红协议基本的命令
+
+三、棋力表现
+  联众快棋等级分:2400 (人工手动,非自动连线)
+  第一届,第二届UCCI引擎联赛第6名,ELO快棋等级分2455

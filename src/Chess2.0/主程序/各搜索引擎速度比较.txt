@@ -1,0 +1,45 @@
+搜索深度为4
+Negamax Search Engine:50.893s
+AlphaBeta Search Engine:1.191s	
+Fail-Soft Alpha-Beta Search Engine:1.201s
+Aspiration Search Engine:0.531s
+PVS Search Engine:1.152s
+Iterative Deepening Alphabeta Search:1.352s
+AlphaBeta+TT Search Engine:1.012s
+Alphabeta+History Heuristic Search Engine:0.320s
+Mdt(f) Search Engine:0.780s
+NegaScout+TT+HH Search Engine:0.360s
+
+搜索深度为5
+AlphaBeta Search Engine:15.702s
+Fail-Soft Alpha-Beta Search Engine:16.744s
+Aspiration Search Engine:3.035s
+PVS Search Engine:11.376s
+Iterative Deepening Alphabeta Search:18.126s
+AlphaBeta+TT Search Engine:8.422s
+Alphabeta+History Heuristic Search Engine:4.016s
+Mdt(f) Search Engine:4.867s
+NegaScout+TT+HH Search Engine:2.323s
+
+搜索深度为6
+Aspiration Search Engine:40.488s
+Alphabeta+History Heuristic Search Engine:28.892s
+Mdt(f) Search Engine:42.020s
+NegaScout+TT+HH Search Engine:8.713s
+
+搜索深度为7
+Alphabeta+History Heuristic Search Engine:502.512s
+NegaScout+TT+HH Search Engine:80.005s
+
+得出结论：
+空(窄)窗探测(PVS，渴望搜索，MTD(f))中渴望搜索最强
+内存增强(置换表)和时间控制(迭代深化)必须配合其他搜索算法才能提高效率
+节点顺序调整(历史/杀手启发)中的历史启发非常不错，单个使用时它是效率最高的
+
+所以我觉得把渴望搜索，置换表，迭代深化，历史启发综合在一起应该是最强的搜索算法。
+
+渴望搜索有问题
+
+经过多次调试:本人发现在Released版本下比在Debug版本下的运行速度快
+
+棋子数为21，搜索深度为8时，搜索时间大约为45s

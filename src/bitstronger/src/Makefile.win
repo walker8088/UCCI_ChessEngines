@@ -1,0 +1,57 @@
+# Project: BitStronger
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = BitStronger/ucci.o utility/pipe.o BitStronger/board.o BitStronger/movement.o BitStronger/movemaker.o BitStronger/BitStronger.o BitStronger/hashnum.o BitStronger/openbook.o BitStronger/searcher.o BitStronger/evaluation.o $(RES)
+LINKOBJ  = BitStronger/ucci.o utility/pipe.o BitStronger/board.o BitStronger/movement.o BitStronger/movemaker.o BitStronger/BitStronger.o BitStronger/hashnum.o BitStronger/openbook.o BitStronger/searcher.o BitStronger/evaluation.o $(RES)
+LIBS =  -L"f:/Dev-Cpp/lib"  
+INCS =  -I"f:/Dev-Cpp/include" 
+CXXINCS =  -I"f:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"f:/Dev-Cpp/include/c++/3.4.2/backward"  -I"f:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"f:/Dev-Cpp/include/c++/3.4.2"  -I"f:/Dev-Cpp/include" 
+BIN  = BitStronger.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before BitStronger.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "BitStronger.exe" $(LIBS)
+
+BitStronger/ucci.o: BitStronger/ucci.cpp
+	$(CPP) -c BitStronger/ucci.cpp -o BitStronger/ucci.o $(CXXFLAGS)
+
+utility/pipe.o: utility/pipe.cpp
+	$(CPP) -c utility/pipe.cpp -o utility/pipe.o $(CXXFLAGS)
+
+BitStronger/board.o: BitStronger/board.cpp
+	$(CPP) -c BitStronger/board.cpp -o BitStronger/board.o $(CXXFLAGS)
+
+BitStronger/movement.o: BitStronger/movement.cpp
+	$(CPP) -c BitStronger/movement.cpp -o BitStronger/movement.o $(CXXFLAGS)
+
+BitStronger/movemaker.o: BitStronger/movemaker.cpp
+	$(CPP) -c BitStronger/movemaker.cpp -o BitStronger/movemaker.o $(CXXFLAGS)
+
+BitStronger/BitStronger.o: BitStronger/BitStronger.cpp
+	$(CPP) -c BitStronger/BitStronger.cpp -o BitStronger/BitStronger.o $(CXXFLAGS)
+
+BitStronger/hashnum.o: BitStronger/hashnum.cpp
+	$(CPP) -c BitStronger/hashnum.cpp -o BitStronger/hashnum.o $(CXXFLAGS)
+
+BitStronger/openbook.o: BitStronger/openbook.cpp
+	$(CPP) -c BitStronger/openbook.cpp -o BitStronger/openbook.o $(CXXFLAGS)
+
+BitStronger/searcher.o: BitStronger/searcher.cpp
+	$(CPP) -c BitStronger/searcher.cpp -o BitStronger/searcher.o $(CXXFLAGS)
+
+BitStronger/evaluation.o: BitStronger/evaluation.cpp
+	$(CPP) -c BitStronger/evaluation.cpp -o BitStronger/evaluation.o $(CXXFLAGS)

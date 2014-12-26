@@ -1,0 +1,21 @@
+int quiescence(int alpha,int beta)
+{
+	int score=evaluation();
+	if(score>=beta)
+		return score;//beta剪枝
+	for(each capturing move m)//对每一吃子的走法
+	{
+		make move m;//产生此走法的子节点
+		//递归搜索子节点
+		score=-quiescence(-beta,-alpha);
+		unmake move m;//撤销搜索过的子节点
+		if(score>=alpha)
+		{
+			alpha=score;//保留最大值
+			if(score>=beta)
+				break;//beta剪枝
+		}
+	}
+	return score;//返回最大值
+}
+把静止期搜索加入原有的搜索过程十分容易，在搜索过程中将叶子节点处的估值函数换成静止期搜索函数，就可以了。
