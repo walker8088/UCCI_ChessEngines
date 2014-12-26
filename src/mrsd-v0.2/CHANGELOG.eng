@@ -1,0 +1,51 @@
+MRSD v0.2 03-08-14
+new features(edit board¡Bclient board)
+use plain C++
+
+MRSD (v0.1+ or cfast7.2) 02-12-22 MRSD+
+MAJOR BUG FIX 
+background thinking
+opening database interface
+minor speed improvements
+binary release
+
+MRSD (v0.1 or cfast7) 02-06-06 MRSD
+bug fix
+change evaluating function
+algorithm improvments
+
+M4(pre cfast7) 02-05-10
+faster
+
+M3(cfast6)  00-12-xx
+use fltk 2.0 as GUI
+new director structure
+	kegg  basic chinese modules
+	gcch  GUI 
+	cfast AI engine
+	iccs-egg iccs client 
+
+M2(cfast5)
+use gtk as GUI , ki11egg text command protocol
+iccs client
+opensource on sourcefab.cx 
+
+cfast-c-5/M1
+faster ai engine and better gui
+freeware binary release
+
+cfast-c-4 00-02-07
+better gui, gcch
+
+cfast-c-0 00-01-28
+faster
+
+cfast-c-3 00-02-03
+use SDL1.01 as GUI
+
+cfast-c-2 00-02-01
+xset BUG fix
+faster
+
+cfast-c-1 00-01-29
+faster

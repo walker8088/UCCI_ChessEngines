@@ -1,0 +1,56 @@
+夢入神蛋 v0.2 03-08-14
+新增功能(殘局、client board)以及使用一般C++ source
+
+夢入聖蛋 (v0.1+ or cfast7.2) 02-12-22 MRSD+
+除錯，有幾個很重大的錯誤，原來能跑，實在很令人訝異。
+背景思考
+開局庫介面
+加速
+binary release
+
+夢入神蛋 (v0.1 or cfast7) 02-06-06 MRSD
+除錯
+審局函數修正
+改進速度
+人工智慧增強
+開放原始碼
+
+M4(pre cfast7) 02-05-10
+寧靜搜尋
+新而快的引擎 cfast7
+
+M3(cfast6)  00-12-xx
+持續改寫GUI架構，但改使用fltk 2.0
+目錄結構改變，將程式碼分成幾個部分
+kegg  基本象棋的結構，此為最基本的模組
+gcch  基於kegg的圖形象棋介面，使用撤蛋語言溝通串連
+cfast 人工智慧模組，可和gcch串連
+iccs-egg 連往iccs client ，下棋介面呼叫gcch ，並使用撤蛋語言溝通
+
+M2(cfast5)
+使用gtk 改寫新的GUI架構，撤蛋語言架構的基本結構
+iccs client 和 gcch 以及人工智慧模組
+在 sourcefab.cx 開放原始碼
+
+cfast-c-5/M1
+加速，改良介面
+freeware binary release
+
+cfast-c-4 00-02-07
+改良圖形介面gcch
+
+cfast-c-0 00-01-28
+加速,將  類別 YX 改成 #定義 座標 uchar
+
+cfast-c-3 00-02-03
+增加圖形介面gcch(use SDL1.01)
+繼續加速
+
+cfast-c-2 00-02-01
+xset BUG fix
+加速!加速!加速!
+
+cfast-c-1 00-01-29
+加速,將移動列表的,來源目地雙index 陣列改成單引數陣列
+加速,將部份 bd 去除
+

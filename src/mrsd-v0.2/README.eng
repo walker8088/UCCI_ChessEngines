@@ -1,0 +1,50 @@
+ki11egg v0.2 MRSD2 Readme
+3rd source release
+Major Changes: 
+1 using plain C++ 
+  get rid of cgcc.  (remember to modify platform setting in Makefiles)
+
+2 Edit Board
+click Edit button.
+use left mouse button to move pieces, and  right button to delete pieces.
+then press update.
+at this moment, you can't save edited board.
+
+3 Client Board
+similiar to XQLearner's Client Board feature.
+click CLI, in popup dialog, click XQ program's title, then the screen
+shot of XQ program will show on the dialog.
+select "Set", then click on up-left-most and right-down-most piece of
+the board. 
+the client board and MRSD should be in the same direction.
+this feature is experimental, MRSD occasionally halt while sending
+command to client board.
+you can restart MRSD and load temp.icc to resume the game.
+
+4 puzzle
+select Puzzle, then MRSD will assume this is a puzzle and only
+consider the "check moves" are legal for red,
+note due to the natural of the algorithm, MRSD may not always
+find the best solution. 
+
+5 background thinking
+select BGthink to use opponent's time to think.
+
+6 text commands
+mrsd accept text commands from stdin, please read the source.
+
+
+ki11egg v0.1+ MRSD+ README
+this is a bug fix version of MRSD v0.1
+the opening database is incomptable with old versions.
+use good, bad, even buttons to edit opening database.
+od,bad,even，比方說要強迫每次開局都走炮二平五，先選擇no ki11egg，然
+
+ki11egg v0.1  MRSD README
+
+the second source code release of ki11egg.
+(ki11egg 0.1 = ki11egg MRSD = ki11egg with cfast7 enging)
+
+ki11egg-M2 cfast5
+first source code release
+
